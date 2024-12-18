@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a7c4f0;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+#header h1, #header p {
+    margin: 0;
+}
+
+#main-content {
+    padding: 20px;
+}
+
+#image-gallery img {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+#videos {
+    text-align: center;
+    margin: 20px 0;
+}

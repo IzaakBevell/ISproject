@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Joke Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000428, #004e92);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        button:hover {
+            background-color: #1c86ee;
+        }
+        #joke {
+            font-size: 18px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Astronomy Joke Generator</h1>
+    <p>Click the button to get a random space joke!</p>
+    <button id="joke-btn">Tell Me a Joke</button>
+    <div id="joke">✨ Your joke will appear here! ✨</div>
+    <script>
+        // List of astronomy-themed jokes
+        const jokes = [
+            "Why did the star break up with the black hole? It felt like it was being sucked in!",
+            "What kind of music do planets like? Neptunes!",
+            "Why did the astronaut bring a ladder to space? To reach the stars!",
+            "Why did the sun go to school? To get a little brighter!",
+            "How do you organize a space party? You planet!",
+            "What did the moon say to its therapist? I’m just going through a phase.",
+            "Why did the star go to the doctor? It felt a little light-headed.",
+            "What’s a star’s favorite type of movie? A stellar performance!",
+            "Why can’t you trust an atom? Because they make up everything in the universe!"
+        ];
+
+        // Add event listener to the button
+        document.getElementById("joke-btn").addEventListener("click", function () {
+            const randomIndex = Math.floor(Math.random() * jokes.length); // Get a random index
+            const randomJoke = jokes[randomIndex]; // Get a random joke
+            document.getElementById("joke").textContent = randomJoke; // Display the joke
+        });
+    </script>
+</body>
+</html>
+
